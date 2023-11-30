@@ -1,11 +1,14 @@
 cask "peazip" do
-  version "9.2.0"
-  sha256 "4116f990e017ed2aaf4283338ee957feb5a7df2aabcf49a5ee16ec863429817e"
-
-  # github.com/rogeriopradoj/homebrew-cask-peazip/ was verified as official when first introduced to the cask
-  url "https://github.com/peazip/PeaZip/releases/download/9.2.0/peazip-9.2.0.DARWIN.aarch64.dmg"
+  version "9.5.0"
   name "PeaZip"
   homepage "https://peazip.github.io/"
+
+  arch arm: "aarch64", intel: "x86_64"
+  sha256 arm:   "3855825eaeb983c1544aa0bc9dfb4efcc3111e52ff365ea2c4336415b730b45d",
+         intel: "db7c351efa3f464898c79a90986e043b980ad35412ae22f8f2ec34678f11a1f4"
+
+  # github.com/rogeriopradoj/homebrew-cask-peazip/ was verified as official when first introduced to the cask
+  url "https://github.com/peazip/PeaZip/releases/download/#{version}/peazip-#{version}.DARWIN.#{arch}.dmg"
 
   app "peazip.app"
 
