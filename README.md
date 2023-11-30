@@ -20,4 +20,4 @@ brew install --cask peazip
 
 ## License
 
-Code is under the [BSD 2 Clause (NetBSD) license](https://github.com/rogeriopradoj/homebrew-cask-peazip/blob/master/LICENSE)
+Code is under the [BSD 2-Clause License](LICENCE.md)
